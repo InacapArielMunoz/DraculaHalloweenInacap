@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura de terror</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fog"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1 class="title">DRÁCULA</h1>
+            <p class="subtitle">Bram Stoker</p>
+        </header>
+
+        <div class="author-info">
+            <h4>✍️ Sobre Bram Stoker</h4>
+            <p>Escritor irlandés (1847-1912), creador del vampiro más famoso de la literatura.</p>
+        </div>
+
+        <div class="books-container">
+            <div class="book-option" onclick="selectAudiobook()">
+                <span class="book-icon">🎧</span>
+                <h2 class="book-title">Audiolibro</h2>
+                <p class="book-description">
+                    Escucha la obra completa
+                </p>
+                <button class="book-button">Escuchar</button>
+            </div>
+
+            <div class="book-option" onclick="selectEbook()">
+                <span class="book-icon">📖</span>
+                <h2 class="book-title">Libro Digital</h2>
+                <p class="book-description">
+                    Lee el libro en formato digital
+                </p>
+                <button class="book-button">Leer</button>
+            </div>
+
+            <div class="libby-info">
+                <p>📘Los libros están alojados en la plataforma Libby.</p>
+                <br>
+                <p>📕Solo debes iniciar sesión con tu cuenta de INACAP.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>🎃 Halloween 2025. Biblioteca y área académica. 🎃</p>
+        </footer>
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Cargando tu experiencia terrorífica...</p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
